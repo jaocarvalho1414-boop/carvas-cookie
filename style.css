@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ 
+    /* Usando o nome da imagem que você enviou */
+    background-image: url('images/fundo.jpeg'); 
+    
+    /* Em vez de cover, usamos um tamanho fixo para não embaçar */
+    background-size: 250px; 
+    
+    /* Faz a imagem se repetir em toda a tela */
+    background-repeat: repeat;
+    
+    /* Deixa o fundo parado enquanto você rola a página */
+    background-attachment: fixed;
+
+    /* Mantém o resto do seu layout */
+    
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* TOPO */
+header {
+  background: #222;
+  color: white;
+  
+  text-align: center;
+}
+
+/* MENU */
+.navbar {
+  
+  background: #444;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin:  10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* CONTAINER */
+.container {
+  
+  max-width: 1000px;
+  
+  gap: 20px;
+}
+
+/* CONTEÚDO */
+main {
+  flex: 3;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* LATERAL */
+aside {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* RODAPÉ */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+.imagem-footer{
+  width: 30px;
+  height: 30px;
+}
+.imagem-title{
+  width:45px;
+  height:45px;
+}
+.imagem-cookie{
+  width: 80px;
+  height: 80px;
+}
+.imagem-cookie-branco{
+  width: 80px;
+  height: 80px;
+}
+.btn-cookie {
+  background-color:#895129;
+  border-color:#895129;
+}
+.btn-cookie:hover {
+  background-color:#00FF00;
+  border-color:#00FF00;
+}
+.btn.btn-primary.btn-cookie-ind {
+    background-color: #895129 !important;
+    border-color: #895129 !important;
+    color: white !important;
+}
+
+/* Para o efeito de passar o mouse */
+.btn.btn-primary.btn-cookie-ind:hover {
+    background-color: red !important;
+    border-color: red !important;
+
+    .borda-marrom {
+    border: 2px solid #7B4B32 !important; /* Este código hexadecimal (#7B4B32) é próximo ao marrom dos seus botões */
+
+}
+
+/* Adicione isto ao seu CSS */
+.justificar-texto {
+    text-align: justify !important;
+    text-justify: inter-word;
+    hyphens: auto; /* Divide as palavras com hífen para preencher melhor os espaços */
+    lang: pt; /* Garante que o navegador saiba onde hifenizar em português */
+}
+}
+
+.login-container {
+        background-color: white; /* Fundo branco */
+        padding: 30px;           /* Espaço interno para o texto não grudar na borda */
+        border-radius: 10px;    /* Bordas arredondadas para um visual moderno */
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.2); /* Sombra para dar profundidade */
+        max-width: 400px;       /* Largura máxima da caixa */
+        margin: 50px auto;      /* Centraliza a caixa na tela */
+    }
+
+    /* Estilo para garantir que o texto seja legível (preto no fundo branco) */
+    .login-container label, .login-container p {
+        color: #333;
